@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<form action="#" th:action="@{/insert}" th:object="${articolo}" method="post">
+		<label>Codice articolo: </label>
+		<input type="text" th:field="*{codArt}" />	
+		<input type="submit" value="salva" />
+	</form>
+</body>
+</html>

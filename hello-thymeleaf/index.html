@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+	<head></head>
+	<body>
+		<p th:text="#{index.welcome}">Hello Tymeleaf</p>
+		
+		<div th:if="${user.isLogged}">
+			<h1 th:text="${user.nome}=='giuseppe' ? 'admin'">Nome</h1>
+			<h2 th:text="${user.cognome}">Cognome</h2>
+		</div>
+	
+	</body>
+</html>
